@@ -1,0 +1,99 @@
+html {
+  background-color: #86a789;
+}
+
+.container {
+  width: 710px;
+  height: 800px;
+  border-radius: 30px;
+  background-color: white;
+  padding: 40px 50px;
+  box-sizing: border-box;
+}
+
+.pertama .psatu {
+  display: inline-block;
+}
+
+.pertama .pdua {
+  display: inline-block;
+  float: right;
+}
+
+.ipt {
+  box-sizing: border-box;
+}
+
+.ipt label {
+  position: relative;
+  display: block;
+  z-index: 11;
+  margin-left: 10px;
+  background-color: white;
+  width: fit-content;
+  padding: 0 5px;
+}
+
+.ipt input {
+  position: relative;
+  height: 45px;
+  bottom: 10px;
+  z-index: 10;
+  border: 1.4px solid #86a789;
+  border-radius: 3px;
+  padding: 0 15px;
+  width: -webkit-fill-available;
+}
+
+.t-merah {
+  color: red;
+  text-decoration: none;
+}
+
+.t-merah:visited {
+  color: red;
+}
+
+.btn-submit {
+  background-color: #86a789;
+  width: -webkit-fill-available;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.t-alig-center {
+  text-align: center;
+}
+
+.line-br p span {
+  position: relative;
+  background-color: white;
+  padding: 0 20px;
+  z-index: 15;
+  color: gray;
+}
+.t-alig-center hr {
+  position: relative;
+  bottom: 25px;
+  z-index: 12;
+}
+
+.login-with {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.login-with button {
+  width: 33%;
+  padding: 7px 0;
+  border: 1px solid #276968;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.login-with button:hover {
+  background-color: #e7e7e7;
+}

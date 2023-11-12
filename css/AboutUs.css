@@ -1,0 +1,138 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(233, 240, 240, 0.9);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 101px;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff86;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.homeT {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 850px;
+}
+
+.homeT p {
+  color: black;
+}
+
+.logsin {
+  gap: 32px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.logsin p {
+  color: black;
+}
+
+.logsin button {
+  border-radius: 4px;
+  background: #9eb24a;
+  border-style: none;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+/*  */
+
+.satu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.satukiri {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 65px;
+}
+
+.satukanan {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 65px;
+}
+
+/*  */
+
+.dua {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 78px;
+  margin: 78px;
+}
+
+/*  */
+
+.tiga {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 38px;
+  margin-top: 50px;
+}
+
+/*  */
+.container {
+  width: 1300px;
+  height: 802px;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 100px;
+}
+
+.isicon1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.isicon1 textarea {
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(233, 240, 240, 0.90);
+    resize: none;
+}
+
+.isicon1 button {
+  width: 233px;
+  height: 55px;
+  background-color: #9EB24A;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+
+.isicon2 {
+  width: 40%;
+}
+
+/*  */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #9EB24A;
+    margin-top: 50px;
+    height: 500px;
+}
