@@ -15,6 +15,7 @@ body {
   color: white;
   font-size: 20px;
   font-weight: 500;
+  top: 0;
 }
 
 .homeT {
@@ -54,6 +55,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 35px;
 }
 
 .satukiri {
@@ -76,7 +78,7 @@ body {
 .dua {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   gap: 78px;
   margin: 78px;
 }
@@ -94,7 +96,7 @@ body {
 /*  */
 .container {
   width: 1300px;
-  height: 802px;
+  height: fit-content;
   background-color: white;
   border-radius: 30px;
   margin-top: 100px;
@@ -114,17 +116,38 @@ body {
     resize: none;
 }
 
-.isicon1 button {
+.btn-kirim {
   width: 233px;
   height: 55px;
   background-color: #9EB24A;
   border-radius: 4px;
   color: white;
   border: none;
+  margin-bottom: 25px;
+}
+
+.btn-loading {
+  margin-bottom: 25px;
+  background-color: #9EB24A;
+  width: 233px;
+  height: 55px;
 }
 
 .isicon2 {
-  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.is{
+  height: 50%;
+}
+
+.iis{
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 /*  */
