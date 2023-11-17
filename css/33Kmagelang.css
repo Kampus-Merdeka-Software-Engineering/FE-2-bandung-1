@@ -65,22 +65,85 @@ body {
     flex-direction: column;
   }
 
-  .gambar {
-  background-image: url('../foto/Magkota.png');
-  background-repeat: round;
-  width: 1285px;
-  height: 811px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .tes {
+    display: flex;
+    padding: 0 35px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #9eb24a; */
   }
-
+  
+  .satu {
+    width: 1200px;
+    position: relative;
+  }
+  
+  .satu i {
+    top: 50%;
+    background: #fff;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+  }
+  
+  .satu i:first-child {
+    left: -23px;
+    display: none;
+  }
+  .satu i:last-child {
+    right: -23px;
+  }
+  
+  .satu .dua {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .dua.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  
+  .dua.dragging img{
+    pointer-events: none;
+  }
+  
+  .dua img {
+    height: 340px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 14px;
+  }
+  
+  .dua img:first-child {
+    margin-left: 0px;
+  }
+  
   .footer {
     display: flex;
     justify-content: space-around;
-    background-color: #9EB24A;
+    background-color: #9eb24a;
     margin-top: 50px;
     height: 500px;
-}
+  }
+  
+  @media screen and (max-width: 900px) {
+    .dua img {
+      width: calc(100% / 2);
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .dua img {
+      width: 100%;
+    }
+  }
   
