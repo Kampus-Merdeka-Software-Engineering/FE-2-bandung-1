@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -7,7 +11,6 @@ body {
 .gambaratas {
   width: 100%;
   height: 820px;
-  background-image: url('../foto/Surakartacity.png');
   background-repeat: round;
   display: flex;
   justify-content: center;
@@ -56,13 +59,36 @@ body {
   color: white;
 }
 
+
 /*  */
 
-.jdl {
+.desk-kota {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.desk-kota p {
+  width: 1297px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 400;
+  color: #656029;
+}
+
+.jdl button {
+  font-size: 72px;
+  font-weight: 900;
+  color: #656029;
+  margin: 8px;
+  width: 676px;
+  height: 140px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ffffff69;
 }
 
 .tes {
@@ -70,7 +96,7 @@ body {
   padding: 0 35px;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
   /* background: #9eb24a; */
 }
 
@@ -108,12 +134,12 @@ body {
   scroll-behavior: smooth;
 }
 
-.dua.dragging{
+.dua.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
 
-.dua.dragging img{
+.dua.dragging img {
   pointer-events: none;
 }
 
@@ -131,9 +157,26 @@ body {
 .footer {
   display: flex;
   justify-content: space-around;
-  background-color: #9eb24a;
+  background-color: #9EB24A;
   margin-top: 50px;
-  height: 500px;
+  height: 350px;
+  padding: 50px;
+}
+
+.isi-footer{
+  display: flex; 
+  flex-direction: column;
+}
+
+.footer-img{
+  gap: 24px; 
+  display: flex; 
+  justify-content: center;
+}
+
+.footer-img img{
+  width: 46px; 
+  height: 46px;
 }
 
 @media screen and (max-width: 900px) {

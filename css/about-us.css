@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -51,21 +55,21 @@ body {
 
 /*  */
 
-.satu {
+.container-head {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
 }
 
-.satukiri {
+.head-img {
   width: 50%;
   display: flex;
   justify-content: center;
   margin: 65px;
 }
 
-.satukanan {
+.head-desk {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -75,7 +79,7 @@ body {
 
 /*  */
 
-.dua {
+.container-why-us {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -83,9 +87,35 @@ body {
   margin: 78px;
 }
 
+.why-us-list {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  width: 25%";
+}
+
+.why-us-list p{
+font-size: 24px; 
+font-weight: 400; 
+text-align: center;
+}
+
 /*  */
 
-.tiga {
+.team{
+  margin-left: 60px;
+}
+
+.team h1{
+  margin: 5px;
+}
+
+.team p{
+  margin: 0px;
+}
+
+.container-team {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -93,8 +123,22 @@ body {
   margin-top: 50px;
 }
 
+.container-team img{
+  width: 328px; 
+  height: 320px;
+}
+
+.container-team h1{
+  font-size: 20px; 
+  font-weight: 800;
+}
+
+.container-team p{
+  font-size: 18px; 
+  font-weight: 700;
+}
 /*  */
-.container {
+.container-contact {
   width: 1300px;
   height: fit-content;
   background-color: white;
@@ -102,14 +146,27 @@ body {
   margin-top: 100px;
 }
 
-.isicon1 {
-  width: 40%;
+.container-contact img{
+  width: 235px; height: 167px;
+}
+
+.revou-contact{
+  display: flex; 
+  justify-content: center;
+}
+
+.container-list-contact{
+  display: flex; justify-content: space-around;
+}
+
+.sbmt-contact {
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 26px;
 }
 
-.isicon1 textarea {
+.sbmt-contact textarea {
     border-radius: 8px;
     border: none;
     background-color: rgba(233, 240, 240, 0.90);
@@ -133,29 +190,63 @@ body {
   height: 55px;
 }
 
-.isicon2 {
+.informasi-contact {
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.is{
-  height: 50%;
+.informasi-contact img{
+  width: 467px;
+  height: 309px;
 }
 
-.iis{
-  height: 50%;
+.detail-contact{
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+    justify-content: space-around;
+    flex-direction: column;
+    row-gap: 5px;
 }
 
+.dtl-contact{
+  display: flex; 
+  justify-content: start; gap: 5px;
+}
+
+.dtl-contact img{
+  height: 24px; 
+  width: 24px; 
+  border-radius: 50%;
+}
+
+.dtl-contact p{
+  font-size: 18px;
+  font-weight: 500;
+}
 /*  */
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #9EB24A;
-    margin-top: 50px;
-    height: 500px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #9EB24A;
+  margin-top: 50px;
+  height: 350px;
+  padding: 50px;
+}
+
+.isi-footer{
+  display: flex; 
+  flex-direction: column;
+}
+
+.footer-img{
+  gap: 24px; 
+  display: flex; 
+  justify-content: center;
+}
+
+.footer-img img{
+  width: 46px; 
+  height: 46px;
 }
