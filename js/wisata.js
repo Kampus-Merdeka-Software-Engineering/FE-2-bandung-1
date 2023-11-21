@@ -2,28 +2,28 @@ let productData = [];
 let datarekom = [
   {
     id: 'wisata26',
-    itemSrc: './foto/kota-salatiga/BentengPendem.png',
+    itemSrc: './img/kota-salatiga/BentengPendem.png',
     name: 'Benteng Pendem',
     idkota: 'Salatiga',
     price: 350000,
   },
   {
     id: 'wisata27',
-    itemSrc: './foto/kota-salatiga/MataAirSenjoyo.png',
+    itemSrc: './img/kota-salatiga/MataAirSenjoyo.png',
     name: 'Mata Air Senjoyo',
     idkota: 'Salatiga',
     price: 350000,
   },
   {
     id: 'wisata28',
-    itemSrc: './foto/kota-salatiga/RawaPening.png',
+    itemSrc: './img/kota-salatiga/RawaPening.png',
     name: 'Rawa Pening',
     idkota: 'Salatiga',
     price: 350000,
   },
   {
     id: 'wisata29',
-    itemSrc: './foto/kota-salatiga/SalokaThemePark.png',
+    itemSrc: './img/kota-salatiga/SalokaThemePark.png',
     name: 'Saloka Theme Park',
     idkota: 'Salatiga',
     price: 350000,

@@ -11,7 +11,7 @@ body {
   .gambaratas {
     width: 100%;
     height: 820px;
-    background-image: url('../foto/fotoatashomepage.png');
+    background-image: url('../img/fotoatashomepage.png');
     background-repeat: round;
     display: flex;
     justify-content: center;

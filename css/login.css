@@ -1,21 +1,35 @@
 html {
-  background-color: #86a789;
+  background-image: url('../img/logsin/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
 }
 
 .container {
   width: 710px;
-  height: 800px;
+  height: 100%;
   border-radius: 30px;
   background-color: white;
   padding: 40px 50px;
   box-sizing: border-box;
 }
 
-.pertama .psatu {
+.logsin .judul {
   display: inline-block;
 }
 
-.pertama .pdua {
+.judul h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.logsin .img {
   display: inline-block;
   float: right;
 }

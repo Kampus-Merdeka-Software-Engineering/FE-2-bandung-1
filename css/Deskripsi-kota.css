@@ -99,7 +99,7 @@ body {
   background-color: #ffffff69;
 }
 
-.tes {
+.slides {
   display: flex;
   padding: 0 35px;
   justify-content: center;
@@ -108,12 +108,12 @@ body {
   /* background: #9eb24a; */
 }
 
-.satu {
+.wrapper {
   width: 1200px;
   position: relative;
 }
 
-.satu i {
+.wrapper i {
   top: 50%;
   background: #fff;
   position: absolute;
@@ -127,38 +127,38 @@ body {
   transform: translateY(-50%);
 }
 
-.satu i:first-child {
+.wrapper i:first-child {
   left: -23px;
   display: none;
 }
-.satu i:last-child {
+.wrapper i:last-child {
   right: -23px;
 }
 
-.satu .dua {
+.wrapper .carrousel {
   white-space: nowrap;
   cursor: pointer;
   overflow: hidden;
   scroll-behavior: smooth;
 }
 
-.dua.dragging {
+.carrousel.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
 
-.dua.dragging img {
+.carrousel.dragging img {
   pointer-events: none;
 }
 
-.dua img {
+.carrousel img {
   height: 340px;
   object-fit: cover;
   width: calc(100% / 3);
   margin-left: 14px;
 }
 
-.dua img:first-child {
+.carrousel img:first-child {
   margin-left: 0px;
 }
 
@@ -206,12 +206,12 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .dua img {
+  .carrousel img {
     width: calc(100% / 2);
   }
 }
 @media screen and (max-width: 550px) {
-  .dua img {
+  .carrousel img {
     width: 100%;
   }
 }
