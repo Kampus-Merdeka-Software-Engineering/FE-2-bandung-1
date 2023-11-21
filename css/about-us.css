@@ -59,7 +59,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .head-img {
@@ -77,7 +77,35 @@ body {
   margin: 65px;
 }
 
+.head-desk h1{
+  font-family: Montserrat Alternates;
+  font-size: 32px;
+  color: #656029;
+  font-weight: 700;
+  letter-spacing: 0.16px;
+}
+
+.head-desk p{
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 /*  */
+
+.jdl-about h1{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Montserrat Alternates;
+}
+
+.jdl-about p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Karla;
+}
 
 .container-why-us {
   display: flex;
@@ -99,6 +127,8 @@ body {
 font-size: 24px; 
 font-weight: 400; 
 text-align: center;
+font-family: Karla;
+color: #37454D;
 }
 
 /*  */
@@ -108,11 +138,20 @@ text-align: center;
 }
 
 .team h1{
-  margin: 5px;
+  color: #051721;
+font-family: Montserrat Alternates;
+font-size: 32px;
+font-weight: 700;
+line-height: 125%;
+letter-spacing: 0.16px;
 }
 
 .team p{
-  margin: 0px;
+  color: #37454D;
+font-family: Karla;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
 }
 
 .container-team {
@@ -129,13 +168,19 @@ text-align: center;
 }
 
 .container-team h1{
-  font-size: 20px; 
-  font-weight: 800;
+  color: #051721;
+font-family: Montserrat Alternates;
+font-size: 20px;
+font-weight: 800;
+line-height: 125%;
 }
 
 .container-team p{
-  font-size: 18px; 
-  font-weight: 700;
+  color: #37454D;
+font-family: Karla;
+font-size: 20px;
+font-weight: 700;
+line-height: 150%;
 }
 /*  */
 .container-contact {
@@ -164,6 +209,23 @@ text-align: center;
   display: flex;
   flex-direction: column;
   gap: 26px;
+}
+
+.sbmt-contact h1{
+  color: #051721;
+font-family: Montserrat Alternates;
+font-size: 32px;
+font-weight: 700;
+line-height: 125%;
+letter-spacing: 0.16px;
+}
+
+.sbmt-contact p{
+  color: #37454D;
+font-family: Karla;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
 }
 
 .sbmt-contact textarea {
@@ -221,8 +283,12 @@ text-align: center;
 }
 
 .dtl-contact p{
-  font-size: 18px;
-  font-weight: 500;
+  color: #37454D;
+font-family: Karla;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
 }
 /*  */
 
@@ -231,8 +297,26 @@ text-align: center;
   justify-content: space-around;
   background-color: #9EB24A;
   margin-top: 50px;
-  height: 350px;
+  height: 300px;
   padding: 50px;
+}
+
+.footer h1{
+  color: #FFF;
+font-family: Montserrat Alternates;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.footer p{
+  color: #FFF;
+font-family: Karla;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .isi-footer{

@@ -11,7 +11,7 @@ body {
 .header-img {
   width: 100%;
   height: 820px;
-  background-image: url('../foto/fotoatashomepage.png');
+  background-image: url('../foto/jawatengah/jawa-tengah.png');
   background-repeat: round;
   display: flex;
   justify-content: center;
@@ -102,6 +102,68 @@ body {
   color: #000000;
 }
 
+.tes {
+  display: flex;
+  padding: 0 35px;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  margin-top: 50px;
+}
+
+.satu {
+  width: 1200px;
+  position: relative;
+}
+
+.satu i {
+  top: 50%;
+  background: #fff;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transform: translateY(-50%);
+}
+
+.satu i:first-child {
+  left: -23px;
+  display: none;
+}
+.satu i:last-child {
+  right: -23px;
+}
+
+.satu .dua {
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.dua.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.dua.dragging img {
+  pointer-events: none;
+}
+
+.dua img {
+  height: 250px;
+  border-radius: 30px;
+  width: calc(100% / 3);
+}
+
+.dua img:first-child {
+  margin-left: 0px;
+}
+
 .container-kota {
   display: flex;
   justify-content: center;
@@ -111,12 +173,14 @@ body {
 
 .container-kota h1 {
   font-size: 72px;
+  font-family: 'Lobster', sans-serif;
   font-weight: 400;
   color: white;
   margin: 8px;
 }
 .container-kota h2 {
   font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: white;
   margin: 8px;
@@ -124,167 +188,6 @@ body {
 /* akhir header homepage */
 
 /* awal isi homepage */
-
-#tour h1 {
-  color: #656029;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.container-deskota {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 20px;
-  background-color: #9db24a11;
-  border-radius: 50px;
-  margin: 20px;
-  padding: 20px 0px 30px 0px;
-}
-
-.container-deskota a{
-  text-decoration: none;
-}
-
-.des-kota {
-  background-image: url('../foto/Isi1.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transition: all 0.4s;
-}
-
-.des-kota2 {
-  background-image: url('../foto/Pekalongan.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transition: all 0.4s;
-}
-
-.des-kota3 {
-  background-image: url('../foto/Surakarta.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transition: all 0.4s;
-}
-
-.des-kota4 {
-  background-image: url('../foto/Salatiga.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transition: all 0.4s;
-}
-
-.des-kota5 {
-  background-image: url('../foto/Magelang.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transition: all 0.4s;
-}
-
-.des-kota6 {
-  background-image: url('../foto/Tegal.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transition: all 0.4s;
-}
-.des-kota:hover {
-  background-image: url('../foto/Isi1.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transform: scale(0.9);
-}
-
-.des-kota2:hover {
-  background-image: url('../foto/Pekalongan.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transform: scale(0.9);
-}
-
-.des-kota3:hover {
-  background-image: url('../foto/Surakarta.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transform: scale(0.9);
-}
-
-.des-kota4:hover {
-  background-image: url('../foto/Salatiga.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transform: scale(0.9);
-}
-
-.des-kota5:hover {
-  background-image: url('../foto/Magelang.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transform: scale(0.9);
-}
-
-.des-kota6:hover {
-  background-image: url('../foto/Tegal.png');
-  background-repeat: round;
-  width: 609px;
-  height: 329px;
-  margin: 15px;
-  transform: scale(0.9);
-}
-
-.des-kota h1 {
-  color: white;
-  margin-left: 30px;
-  text-align: center;
-}
-.des-kota2 h1 {
-  color: white;
-  margin-left: 30px;
-  text-align: center;
-}
-.des-kota3 h1 {
-  color: white;
-  margin-left: 30px;
-  text-align: center;
-}
-.des-kota4 h1 {
-  color: white;
-  margin-left: 30px;
-  text-align: center;
-}
-.des-kota5 h1 {
-  color: white;
-  margin-left: 30px;
-  text-align: center;
-}
-.des-kota6 h1 {
-  color: white;
-  margin-left: 30px;
-  text-align: center;
-}
-
 .recom {
   display: flex;
   gap: 80px;
@@ -309,23 +212,43 @@ body {
   border: 3px solid;
 }
 
+.recom {
+  color: #9eb24a;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
 .recom p:hover {
   cursor: pointer;
   color: #bad746;
 }
 
 .container-back-wisata {
-  background-color: #9db24a11;
+  background-color: #9db24a14;
   padding: 10px 0px 40px 0px;
-  margin: 50px 20px 20px 20px;
-  border-radius: 50px;
+  margin: 80px 0px 80px 0px;
+}
+
+.container-back-wisata h1 {
+  color: #656029;
+  margin: 0;
+  text-align: center;
+  font-family: Elsie Swash Caps;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .container-wisata {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
-  margin: 0 30px 0 30px;
+  margin: 20px 30px 0 30px;
 }
 
 .isi_wisata {
@@ -348,12 +271,20 @@ body {
 /* akhir homepage */
 
 /* awal testi*/
+.about-us h1 {
+  font-family: Elsie Swash Caps;
+  text-align: center;
+  font-size: 45px;
+  color: #656029;
+}
+
 .container-swipe {
-  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #bdbdbd5c;
+  margin: 80px 0px 80px 0px;
 }
 
 .testimonial {
@@ -412,8 +343,26 @@ body {
   justify-content: space-around;
   background-color: #9EB24A;
   margin-top: 50px;
-  height: 300px;
+  height: 250px;
   padding: 50px;
+}
+
+.footer h1{
+  color: #FFF;
+font-family: Montserrat Alternates;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.footer p{
+  color: #FFF;
+font-family: Karla;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .isi-footer{
