@@ -167,8 +167,8 @@ body {
   justify-content: space-around;
   background-color: #9eb24a;
   margin-top: 50px;
-  height: 250px;
-  padding: 50px;
+  height: 100%;
+  padding: 20px;
 }
 
 .footer h1 {

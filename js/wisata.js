@@ -35,13 +35,11 @@ const listrekomen = document.getElementById('listrekomendasi');
 function itemwista(id, jdl, price) {
   return `
     <div style="width: 80%">
-        <h1 style="color: white; margin: 0px 0px 0px 0px; text-align: center; font-size: 25px; font-family: 'Montserrat Alternates', sans-serif; font-style: normal;
-        ">${jdl}</h1>
+        <h1>${jdl}</h1>
     </div>
-    <h2 style="font-size: 24px; color: white; margin: 0px 0px 0px 0px; font-family: 'Montserrat Alternates', sans-serif; font-style: normal;
-    ">Rp.${price}</h2>
-    <button style="width: 206px; height: 46px; padding: 8px 16px; border-radius: 25px; font-size: 16px; font-style: normal; font-weight: 800; border: none; font-family: 'Montserrat Alternates', sans-serif; margin-bottom: 10px;">
-        <a href="pay.html?id=${id}" style="text-decoration: none; color: #9eb24a">Go Flight</a>
+    <h2>Rp.${price}</h2>
+    <button>
+        <a href="pay.html?id=${id}">Go Flight</a>
     </button>`;
 }
 function cetakitemisata() {
