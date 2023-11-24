@@ -1,36 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
   background-color: rgba(233, 240, 240, 0.9);
+  min-width: 375px;
 }
 
 .gambaratas {
-  width: 100%;
-  height: 820px;
-  background-repeat: round;
+  width: -webkit-fill-available;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header-img {
+  width: 100%;
+  height: 820px;
+  background-image: url('../img/jawatengah/jawa-tengah.png');
+  background-repeat: round;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 101px;
-  width: 100%;
+  width: -webkit-fill-available;
   position: fixed;
-  background-color: #ffffff86;
+  background-color: #ffffff4a;
   color: white;
   font-size: 20px;
   font-weight: 500;
+  z-index: 999;
 }
 
 .menu {
@@ -38,11 +53,41 @@ body {
   justify-content: space-around;
 }
 
-.homeT {
+.navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 850px;
+  width: 385px;
+}
+
+.navbar a {
+  color: #00000094;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.navbar a:hover {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.burger {
+  margin-top: 23px;
+  margin-right: 25px;
+  display: none;
+}
+.burger i:hover {
+  font-size: 23px;
+}
+
+.scrolled1 {
+  background-color: #ffffff94;
+}
+
+.scrolled2 {
+  background-color: #ffffff;
 }
 
 .logsin {
@@ -56,12 +101,24 @@ body {
   background: #9eb24a;
   border-style: none;
   width: 120px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
-  color: white;
+  color: #00000094;
+  padding: 11px;
 }
 
-/*  */
+.logsin button a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #00000094;
+}
+
+.logsin button a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* navbar */
 
 .desk-kota {
   display: flex;
@@ -99,74 +156,86 @@ body {
   background-color: #ffffff69;
 }
 
-.slides {
+.slide {
+  min-height: 50vh;
   display: flex;
-  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  background: #efefef;
+}
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+}
+.card .image-box {
+  height: 200px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .profile-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+.name-job {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
-  /* background: #9eb24a; */
 }
-
-.wrapper {
-  width: 1200px;
-  position: relative;
-}
-
-.wrapper i {
-  top: 50%;
-  background: #fff;
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  line-height: 45px;
+.card .profile-details img {
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.2rem;
-  transform: translateY(-50%);
+}
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-details button {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 1px 15px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #9eb24a;
 }
 
-.wrapper i:first-child {
-  left: -23px;
-  display: none;
+.swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
 }
-.wrapper i:last-child {
-  right: -23px;
-}
-
-.wrapper .carrousel {
-  white-space: nowrap;
-  cursor: pointer;
-  overflow: hidden;
-  scroll-behavior: smooth;
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
 }
 
-.carrousel.dragging {
-  cursor: grab;
-  scroll-behavior: auto;
-}
-
-.carrousel.dragging img {
-  pointer-events: none;
-}
-
-.carrousel img {
-  height: 340px;
-  object-fit: cover;
-  width: calc(100% / 3);
-  margin-left: 14px;
-}
-
-.carrousel img:first-child {
-  margin-left: 0px;
+.swiper-pagination-bullet {
+  background-color: #000;
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
   background-color: #9eb24a;
-  margin-top: 50px;
   height: 100%;
   padding: 20px;
 }
@@ -174,10 +243,11 @@ body {
 .footer h1 {
   color: #fff;
   font-family: Montserrat Alternates;
-  font-size: 20px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  padding: 5px;
 }
 
 .footer p {
@@ -187,6 +257,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding: 5px;
 }
 
 .isi-footer {
@@ -205,13 +276,201 @@ body {
   height: 46px;
 }
 
-@media screen and (max-width: 900px) {
-  .carrousel img {
-    width: calc(100% / 2);
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+  .gambaratas {
+    height: 600px;
+  }
+  .slide {
+    min-height: 50vh;
+  }
+  .desk-kota p {
+    font-size: 30px;
   }
 }
-@media screen and (max-width: 550px) {
-  .carrousel img {
-    width: 100%;
+
+@media screen and (min-width: 521px) and (max-width: 949px) {
+  .navbar {
+    display: none;
+  }
+  .logsin {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .logsin button {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    align-items: center;
+    height: 25px;
+  }
+  .logsin button a {
+    font-size: 15px;
+  }
+  .burger {
+    display: block;
+    margin-left: 65px;
+    margin-top: 18px;
+  }
+  .header-active {
+    background-color: #ffffffc0;
+  }
+  .header-active .navbar {
+    display: block;
+    margin-top: 10px;
+  }
+  .navbar {
+    margin-bottom: 20px;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  .header-active .navbar p {
+    text-align: center;
+  }
+  .header {
+    align-items: flex-start;
+  }
+
+  .header img {
+    width: 120px;
+  }
+
+  .jdl button {
+    font-size: 40px;
+    width: 300px;
+    height: 65px;
+  }
+
+  .gambaratas {
+    height: 500px;
+  }
+
+  .slide {
+    min-height: 45vh;
+  }
+
+  .desk-kota p {
+    margin: 25px;
+    font-size: 18px;
+  }
+
+  .isi-footer img {
+    width: 125px;
+  }
+
+  .footer-img img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .footer h1 {
+    font-size: 17px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer-img {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .navbar {
+    display: none;
+  }
+  .logsin {
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+  }
+  .logsin button {
+    display: flex;
+    justify-content: center;
+    width: 73px;
+    align-items: center;
+    height: 24px;
+  }
+  .logsin button a {
+    font-size: 13px;
+  }
+  .burger {
+    display: block;
+    margin-left: 65px;
+    margin-top: 13px;
+  }
+  .header-active {
+    background-color: #ffffffc0;
+  }
+  .header-active .navbar {
+    display: block;
+    margin-top: 5px;
+  }
+  .navbar {
+    margin-bottom: 20px;
+  }
+  .navbar a {
+    font-size: 14px;
+    margin: 1px;
+  }
+
+  .header-active .navbar p {
+    text-align: center;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .header img {
+    width: 90px;
+  }
+
+  .gambaratas {
+    height: 350px;
+  }
+
+  .container {
+    margin: 0px 45px;
+  }
+
+  .jdl button {
+    font-size: 35px;
+    width: 273px;
+    height: 60px;
+  }
+
+  .slide {
+    min-height: 42vh;
+  }
+
+  .desk-kota p {
+    font-size: 16px;
+    margin: 20px;
+  }
+
+  .isi-footer img {
+    width: 90px;
+  }
+
+  .footer-img img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .footer h1 {
+    font-size: 8px;
+  }
+
+  .footer p {
+    font-size: 7px;
+  }
+
+  .footer-img {
+    gap: 5px;
   }
 }

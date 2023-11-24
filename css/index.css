@@ -187,7 +187,7 @@ body {
 }
 
 .container-kota h1 {
-  font-size: 72px;
+  font-size: 70px;
   font-family: 'Lobster', sans-serif;
   font-weight: 400;
   color: white;
@@ -236,7 +236,7 @@ body {
 .container-back-wisata {
   background-color: #9db24a0d;
   padding: 10px 0px 40px 0px;
-  margin: 80px 0px 80px 0px;
+  margin: 50px 0px 50px 0px;
 }
 
 .container-back-wisata h1 {
@@ -463,6 +463,37 @@ body {
   /* .header-img {
     height: 600px;
   } */
+  .navbar {
+    display: none;
+  }
+  .logsin {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-left: 65px;
+  }
+  .header-active {
+    background-color: #ffffffc0;
+  }
+  .header-active .navbar {
+    display: block;
+    margin-top: 0;
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  .header-active .navbar p {
+    text-align: center;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .header img {
+    width: 120px;
+  }
 
   .carrousel img {
     height: 170px;
@@ -541,10 +572,10 @@ body {
   }
   .header-active .navbar {
     display: block;
-    margin-top: 30px;
+    margin-top: 0;
   }
   .navbar {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .header-active .navbar p {
     text-align: center;
@@ -568,11 +599,11 @@ body {
   }
   .isi_wisata {
     width: 100%;
-    height: 250px;
+    height: 255px;
   }
 
   .container-back-wisata h1 {
-    font-size: 50px;
+    font-size: 47px;
   }
 
   .container-kota {
@@ -603,7 +634,8 @@ body {
   }
   .container-wisata {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
+    margin: 40px;
   }
   .recom {
     gap: 30px;

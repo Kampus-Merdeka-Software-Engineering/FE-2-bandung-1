@@ -1,28 +1,138 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Semarang City</title>
-    <link rel="stylesheet" href="css/Deskripsi-kota.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&family=Karla:wght@700&family=Lobster&family=Montserrat+Alternates:wght@800&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Semarang</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/deskripsi-kota.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header header-active" id="header">
       <img src="img/logo/logo.png" alt="" />
-      <div class="homeT">
-        <p><a style="color: #000000; text-decoration: none" href="index.html">Home</a></p>
+      <div class="navbar" id="navbar">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about-us.html">About us</a></p>
+        <div class="logsin">
+          <button><a href="login.html">Login</a></button>
+        </div>
       </div>
-      <div class="logsin">
-        <p><a style="color: #000000; text-decoration: none" href="login.html">login</a></p>
-        <button><a style="color: #fff; text-decoration: none" href="Signup.html">Sign up</a></button>
+      <div class="burger">
+        <i class="fa-solid fa-bars" id="burger" style="color: black"></i>
       </div>
     </div>
-    <div class="gambaratas" style="background-image: url('./img/deskkota/Semarang.png');">
+    <div class="gambaratas" style="background-image: url('./img/deskkota/Semarang.png')">
       <div class="jdl">
         <button>Semarang City</button>
       </div>
     </div>
+    <!-- slides -->
+    <div class="slide">
+      <div class="container swiper">
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/CandiGedongSongo.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Candi Gedong Songo</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/CimoryOnTheValley.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Cimory On The Valley</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/DusunSemilirEcoPark.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Dusun Semilir Eco Park</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/LawangSewu.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Lawang Sewu</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/SnowOwrld.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Snow World</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/TamanBungaCelosia.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Taman Bunga Celosia</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/TheGreatTempleOfSamPooKong.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Temple Of Sam PooKong</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/kota-semarang/UmbulSidomukti.png" alt="" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Umbul Sidomukti</h3>
+                  <a href=""><button class="go-flight">Go Flight</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- slides -->
     <!--  -->
     <div class="desk-kota">
       <p>
@@ -32,23 +142,6 @@
         Temple. With its tropical climate, Semarang offers warm weather throughout the year, making it an attractive tourist destination for both local and foreign travelers. The city is also a thriving economic and business center in
         Central Java. With a combination of cultural heritage, natural beauty, and economic progress, Semarang is a destination worth visiting.
       </p>
-    </div>
-    <!--  -->
-    <div class="slides">
-      <div class="wrapper">
-        <i id="left" class="fa-solid fa-chevron-left"></i>
-        <div class="carrousel">
-          <img src="img/kota-semarang/CandiGedongSongo.png" alt="img" draggable="false" />
-          <img src="img/kota-semarang/CimoryOnTheValley.png" alt="img" draggable="false" />
-          <img src="img/kota-semarang/DusunSemilirEcoPark.png" alt="img" draggable="false" />
-          <img src="img/kota-semarang/LawangSewu.png" alt="img" draggable="false" />
-          <img src="img/kota-semarang/SnowOwrld.png" alt="img" draggable="false" />
-          <img src="img/kota-semarang/TamanBungaCelosia.png" alt="img" draggable="false" />
-          <img src="img/kota-semarang/TheGreatTempleOfSamPooKong.png" alt="img" draggable="false" />
-          <img src="img/kota-semarang/UmbulSidomukti.png" alt="img" draggable="false" />
-        </div>
-        <i id="right" class="fa-solid fa-chevron-right"></i>
-      </div>
     </div>
     <!-- FOOTER -->
     <div class="footer">
@@ -90,7 +183,11 @@
       </div>
     </div>
     <!-- FOOTER -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swipe-desk-kota.js"></script>
+    <script src="js/scrips.js"></script>
+    <script src="js/scrolhome.js"></script>
     <script src="https://kit.fontawesome.com/0bc24d3478.js" crossorigin="anonymous"></script>
-    <script src="js/sldkota.js" defer></script>
   </body>
 </html>

@@ -4,3 +4,4 @@ const burger = document.getElementById('burger');
 burger.addEventListener('click', function () {
   head.classList.toggle('header-active');
 });
+
