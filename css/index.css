@@ -634,8 +634,8 @@ body {
   }
   .container-wisata {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
-    margin: 40px;
+    grid-gap: 50px;
+    margin: 50px;
   }
   .recom {
     gap: 30px;

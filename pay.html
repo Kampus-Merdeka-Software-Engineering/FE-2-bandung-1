@@ -12,43 +12,54 @@
     </div>
     <div class="checkout"">
       <div class="container">
-        <h1>Pesan Tiket Sekarang</h1>
-        <h2>Daftarkan diri dan lakukan Pembayaran</h2>
-        <div class="ipt">
-          <h1>Name</h1>
-          <input type="text" placeholder="Full Name"/>
+        <h1>Book Now For Travel </h1>
+        <div class="form">
+          <div class="ipt">
+            <h1>Name</h1>
+            <input type="text" placeholder="Enter your name and surname"/>
+          </div>
+          <div class="ipt">
+            <h1>Email Address</h1>
+            <input type="text" placeholder="Enter your email address"/>
+          </div>
         </div>
-        <div class="ipt">
-          <h1>Email</h1>
-          <input type="text" placeholder="Your Email"/>
+        <div class="form">
+          <div class="ipt">
+            <h1>Telephone Number</h1>
+            <input type="text" placeholder="Enter your telephone number"/>
+          </div>
+          <div class="ipt">
+            <h1>Destinations</h1>
+            <input type="text" placeholder="Select the service types"/>
+          </div>
         </div>
-        <div class="ipt">
-          <h1>Phone</h1>
-          <input type="text" placeholder="Phone Number"/>
+        <div class="form">
+          <div class="ipt">
+            <h1>Address</h1>
+            <input type="text" placeholder="Enter the address"/>
+          </div>
+          <div class="ipt">
+            <h1>Quantity</h1>
+            <input type="number" placeholder="Select the quantity"/>
+          </div>
         </div>
-        <div class="ipt">
-          <h1>Addres</h1>
-          <input type="text" />
+        <div class="form">
+          <div class="ipt">
+            <h1>Price</h1>
+            <input type="text"/>
+          </div>
+          <div class="ipt">
+            <h1>Choose Payment Method</h1>
+            <input type="text" placeholder="Select the payment"/>
+          </div>
         </div>
-        <div class="ipt">
-          <h1>Destination</h1>
-          <input type="text" />
-        </div>
-        <div class="ipt">
-          <h1>Quantity</h1>
-          <input type="number" />
-        </div>
-        <div class="ipt">
-          <h1>Price</h1>
-          <input type="text" />
-        </div>
-        <div class="ipt">
-          <h1>Choose Payment Method</h1>
-          <input type="text" />
-        </div>
+        
         <div class="smbt">
-          <button onclick="pop.popup()">Pesan</button>
+          <button onclick="pop.popup()">Book Now</button>
         </div>
+      </div>
+      <div class="imge">
+        <img src="img/pembelian/mobil.png" alt="">
       </div>
     </div>
 
@@ -58,9 +69,16 @@
           <div class="sett-header">
             <button class="close-button" onclick="pop.popClear()" href="">×</button>
           </div>
+          <div class="container-pop">
+            <img src="img/pembelian/succes.png" alt="">
+            <h1>Success</h1>
+            <p>Thank you for your request. 
+              We are working hard to find the best service and deals for you. </p>
+              <button>continue</button>
+          </div>
         </div>
       </div>
     </div>
-    <script src="script.js/pay.js"></script>
+    <script src="js/pay.js"></script>
   </body>
 </html>
