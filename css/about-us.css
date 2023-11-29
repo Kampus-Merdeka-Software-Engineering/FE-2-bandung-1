@@ -47,21 +47,35 @@ body {
     width: 335px;
 }
 
-.navbar p{
-  margin-bottom: 0px;
-}
-
 .navbar a {
   color: #00000094;
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s;
+  position: relative;
 }
 .navbar a:hover {
-  color: black;
+  color: #D2E3C8;
   text-decoration: none;
   transition: all 0.1s;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #D2E3C8;
+  transition: 0, 3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
 }
 
 .burger {
