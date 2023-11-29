@@ -42,9 +42,13 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 850px;
+    justify-content: space-around;
+    align-items: center;
+    width: 335px;
+}
+
+.navbar p{
+  margin-bottom: 0px;
 }
 
 .navbar a {
@@ -61,7 +65,7 @@ body {
 }
 
 .burger {
-  margin-right: 25px;
+  margin: 18px;
   display: none;
 }
 .burger i:hover {
@@ -90,6 +94,10 @@ body {
   font-size: 22px;
   font-weight: 500;
   color: #00000094;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logsin p a {
@@ -119,7 +127,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .head-img {
@@ -268,6 +276,7 @@ line-height: 150%;
 .revou-contact{
   display: flex; 
   justify-content: center;
+  margin: 0 20px;
 }
 
 .container-list-contact{
@@ -275,10 +284,10 @@ line-height: 150%;
 }
 
 .sbmt-contact {
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 25px;
 }
 
 .sbmt-contact h1{
@@ -323,10 +332,11 @@ line-height: 150%;
 }
 
 .informasi-contact {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 85px;
 }
 
 .informasi-contact img{
@@ -439,6 +449,17 @@ line-height: normal;
     font-size: 19px;
   }
 
+  .navbar a{
+    font-size: 17px;
+  }
+  .logsin button{
+    height: 31px;
+    width: 75px;
+  }
+  .logsin button a{
+      font-size: 17px;
+    
+  }
   .head-desk h2{
     font-size: 13px;
   }
@@ -504,26 +525,57 @@ line-height: normal;
 }
 }
 
+
 @media screen and (max-width: 649px){
   .navbar {
     display: none;
   }
+  .navbar a{
+    font-size: 17px;
+  }
   .logsin {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
+  .logsin button{
+    height: 31px;
+    width: 75px;
+  }
+  .logsin button a{
+    font-size: 18px;
   }
   .burger {
     display: block;
+    margin-left: 65px;
   }
-  .head-desk h1 {
-    font-size: 19px;
+  .header-active {
+    background-color: #ffffffc0;
+    height: auto;
+  }
+  .header-active .navbar {
+    display: block;
+    margin-top: 0;
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  .header-active .navbar p {
+    text-align: center;
   }
 
-  .head-desk h2{
-    font-size: 13px;
+  .header {
+    align-items: flex-start;
   }
-  
-  .head-desk p {
-    font-size: 11px;
+
+  .header img {
+    width: 120px;
+  }
+
+  .header-img {
+    height: 577px;
+    justify-content: space-around;
   }
 .jdl-about h1{
   font-size: 30px;

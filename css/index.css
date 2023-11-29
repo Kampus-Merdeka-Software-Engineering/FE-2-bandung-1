@@ -7,6 +7,7 @@ body {
   padding: 0px;
   background-color: rgba(233, 240, 240, 0.9);
   min-width: 714px;
+  /* zoom: 80%; */
 }
 
 /* navbar */
@@ -43,7 +44,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 850px;
+  width: 600px;
 }
 
 .navbar a {
@@ -52,11 +53,29 @@ body {
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s;
+  position: relative;
 }
 .navbar a:hover {
-  color: black;
+  color: #D2E3C8;
   text-decoration: none;
   transition: all 0.1s;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: #D2E3C8;
+  transition: 0, 3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
 }
 
 .burger {
@@ -88,6 +107,7 @@ body {
   border-style: none;
   width: 120px;
   font-size: 22px;
+  padding: 15px;
   font-weight: 500;
   color: #00000094;
 }
@@ -103,15 +123,6 @@ body {
   font-size: 22px;
   color: #00000094;
 }
-.logsin p a:hover {
-  text-decoration: none;
-  color: #000000;
-}
-
-.logsin button a:hover {
-  text-decoration: none;
-  color: #000000;
-}
 
 /* navbar */
 
@@ -126,7 +137,7 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1000px;
   position: relative;
 }
 
@@ -169,7 +180,7 @@ body {
 }
 
 .carrousel img {
-  height: 250px;
+  height: 200px;
   border-radius: 30px;
   width: calc(100% / 3);
 }
@@ -207,30 +218,58 @@ body {
   height: 600px;
 }
 
-.recom {
-  display: flex;
-  gap: 80px;
-  font-size: 24px;
-  color: #9eb24a;
-  align-items: center;
-  justify-content: center;
+.contai {
+  background-color: #ebf3e8;
   width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.recom button {
-  width: 124px;
-  height: 61px;
-  color: #9eb24a;
-  border-radius: 20px;
-  border-color: #9eb24a;
-  font-size: 24px;
-  font-weight: 800px;
-  border: 3px solid;
+nav {
+  background: #d2e3c8;
+  border-radius: 50px;
+  padding: 0 10px;
+  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
 }
 
-.recom p:hover {
+nav ul p {
+  display: inline-block;
+  list-style: none;
+  padding: 5px 20px;
+  margin: 5px;
+  font-size: 23px;
+  font-weight: 500;
+  color: #777;
   cursor: pointer;
-  color: #bad746;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s;
+}
+
+nav ul p::after {
+  content: '';
+  background: #b2c8ba;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul p:hover {
+  color: #fff;
+}
+
+nav ul p:hover::after {
+  top: 50%;
+  opacity: 1;
 }
 
 .container-back-wisata {
@@ -244,7 +283,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: Elsie Swash Caps;
-  font-size: 96px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -446,11 +485,6 @@ body {
     font-weight: 100;
   }
 
-  .recom {
-    gap: 47px;
-    font-size: 20px;
-  }
-
   .footer p {
     font-size: 13px;
   }
@@ -460,35 +494,22 @@ body {
   }
 }
 @media screen and (min-width: 501px) and (max-width: 949px) {
-  /* .header-img {
-    height: 600px;
-  } */
+  /*  */
   .navbar {
-    display: none;
-  }
-  .logsin {
-    display: none;
-  }
-  .burger {
-    display: block;
-    margin-left: 65px;
-  }
-  .header-active {
-    background-color: #ffffffc0;
-  }
-  .header-active .navbar {
-    display: block;
-    margin-top: 0;
-  }
-  .navbar {
-    margin-bottom: 0;
-  }
-  .header-active .navbar p {
-    text-align: center;
+    width: 500px;
   }
 
-  .header {
-    align-items: flex-start;
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .logsin button {
+    width: 100px;
+    padding: 5px;
+  }
+
+  .logsin button a {
+    font-size: 20px;
   }
 
   .header img {
@@ -529,10 +550,6 @@ body {
     grid-gap: 25px;
   }
 
-  .recom {
-    gap: 40px;
-    font-size: 18px;
-  }
   .isi-footer img {
     width: 130px;
   }
@@ -561,7 +578,17 @@ body {
     display: none;
   }
   .logsin {
-    display: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
+  .logsin button {
+    width: 100px;
+    padding: 5px;
+  }
+  .logsin button a {
+    font-size: 20px;
   }
   .burger {
     display: block;
@@ -637,11 +664,6 @@ body {
     grid-gap: 50px;
     margin: 50px;
   }
-  .recom {
-    gap: 30px;
-    font-size: 16px;
-  }
-
   .isi-footer img {
     width: 130px;
   }

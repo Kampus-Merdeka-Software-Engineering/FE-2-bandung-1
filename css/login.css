@@ -4,6 +4,8 @@ html {
   background-size: cover;
 }
 
+
+
 .login {
   display: flex;
   justify-content: center;
@@ -12,7 +14,7 @@ html {
 }
 
 .container {
-  width: 710px;
+  width: 60%;
   height: 100%;
   border-radius: 30px;
   background-color: white;
@@ -111,3 +113,9 @@ html {
 .login-with button:hover {
   background-color: #e7e7e7;
 }
+
+@media  screen and (min-width: 1150px) and (max-width: 1320px) {
+  
+}
+
+

@@ -11,7 +11,7 @@ form.addEventListener('submit', (e) => {
   BtnLoading.classList.toggle('d-none'); //cari loading cek, toggle(switch ada jadi tidak ada dan sebaliknya)
   BtnKirim.classList.toggle('d-none');
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then((response) => {
+    .then(() => {
       // tampilkan tombol kirim, dan menghilangkan tombol loading
       BtnLoading.classList.toggle('d-none');
       BtnKirim.classList.toggle('d-none');
@@ -19,7 +19,6 @@ form.addEventListener('submit', (e) => {
       Alert.classList.toggle('d-none');
       //reset formnya
       form.reset();
-      console.log('Success!', response);
     })
     .catch((error) => console.error('Error!', error.message));
 });
