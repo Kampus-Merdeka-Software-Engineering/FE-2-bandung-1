@@ -586,6 +586,9 @@ nav ul p:hover::after {
 
 @media screen and (max-width: 500px) {
   /* ================================= navbar none */
+  body{
+    zoom: 0.5;
+  }
   .navbar {
     display: none;
   }
