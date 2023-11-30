@@ -541,6 +541,9 @@ line-height: normal;
 
 
 @media screen and (max-width: 649px){
+  body{
+    zoom: 0.5;
+  }
   .navbar {
     display: none;
   }
