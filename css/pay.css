@@ -248,12 +248,12 @@ img{
     margin: 5px 0px 5px 0px;
   }
   .ipt h1 {
-    font-size: 9px;
+    font-size: 8px;
   }
   .ipt input {
     border-radius: 6px;
-    height: 20px;
-    font-size: 8px;
+    height: 18px;
+    font-size: 6px;
   }
   .smbt button {
     border-radius: 14px;
