@@ -668,9 +668,16 @@ nav ul p:hover::after {
   }
 
   .slide p {
-    font-size: 15px;
+    font-size: 14px;
+  }
+  
+  .testimonial{
+    padding: 30px;
   }
 
+  .testimonial .image {
+    width: 100px;
+}
   .isi_wisata h1,
   .isi_wisata h2,
   .isi_wisata button {
@@ -682,6 +689,7 @@ nav ul p:hover::after {
     grid-gap: 50px;
     margin: 50px;
   }
+
   .isi-footer img {
     width: 130px;
   }
