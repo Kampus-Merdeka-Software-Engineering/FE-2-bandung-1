@@ -75,7 +75,7 @@ for (let i = 0; i < listkota.length; i++) {
     cetakitemisata();
   });
 }
-
+// 
 // ketika pertama kali dirun
 productData = getdata('all');
 cetakitemisata();

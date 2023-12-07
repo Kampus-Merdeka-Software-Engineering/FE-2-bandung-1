@@ -11,7 +11,6 @@ html {
 
 body {
   background-color: rgba(233, 240, 240, 0.9);
-  min-width: 375px;
 }
 
 .gambaratas {
@@ -68,8 +67,9 @@ body {
   transition: all 0.2s;
   position: relative;
 }
+
 .navbar a:hover {
-  color: #D2E3C8;
+  color: #d2e3c8;
   text-decoration: none;
   transition: all 0.1s;
 }
@@ -81,7 +81,7 @@ body {
   height: 2px;
   width: 100%;
   left: 0;
-  background-color: #D2E3C8;
+  background-color: #d2e3c8;
   transition: 0, 3s;
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
@@ -96,6 +96,7 @@ body {
   margin-right: 25px;
   display: none;
 }
+
 .burger i:hover {
   font-size: 23px;
 }
@@ -181,27 +182,33 @@ body {
   justify-content: center;
   background: #efefef;
 }
+
 .container {
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
 }
+
 .slide-container {
   margin: 0 30px;
   overflow: hidden;
 }
+
 .card {
   background: #fff;
   border-radius: 8px;
 }
+
 .card .image-box {
   height: 200px;
 }
+
 .card .image-box img {
   width: 100%;
   height: 100%;
   border-radius: 8px 8px 0 0;
 }
+
 .card .profile-details {
   display: flex;
   align-items: center;
@@ -209,21 +216,25 @@ body {
   column-gap: 12px;
   padding: 15px;
 }
+
 .name-job {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .card .profile-details img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
 }
+
 .profile-details .name {
   font-size: 15px;
   font-weight: 500;
 }
+
 .profile-details button {
   font-size: 13px;
   font-weight: 500;
@@ -232,6 +243,7 @@ body {
   border-radius: 10px;
   border-style: none;
   background-color: #9eb24a;
+  cursor: pointer;
 }
 
 .swiper-navBtn {
@@ -241,6 +253,7 @@ body {
   background: #fff;
   border-radius: 50%;
 }
+
 .swiper-navBtn::before,
 .swiper-navBtn::after {
   font-size: 18px;
@@ -298,9 +311,11 @@ body {
   .gambaratas {
     height: 600px;
   }
+
   .slide {
     min-height: 50vh;
   }
+
   .desk-kota p {
     font-size: 30px;
   }
@@ -310,12 +325,14 @@ body {
   .navbar {
     display: none;
   }
+
   .logsin {
     display: block;
     display: flex;
     justify-content: center;
     margin: 0;
   }
+
   .logsin button {
     display: flex;
     justify-content: center;
@@ -323,30 +340,38 @@ body {
     align-items: center;
     height: 25px;
   }
+
   .logsin button a {
     font-size: 15px;
   }
+
   .burger {
     display: block;
     margin-left: 65px;
     margin-top: 18px;
   }
+
   .header-active {
     background-color: #ffffffc0;
   }
+
   .header-active .navbar {
     display: block;
     margin-top: 10px;
   }
+
   .navbar {
     margin-bottom: 20px;
   }
+
   .navbar a {
     font-size: 15px;
   }
+
   .header-active .navbar p {
     text-align: center;
   }
+
   .header {
     align-items: flex-start;
   }
@@ -400,12 +425,14 @@ body {
   .navbar {
     display: none;
   }
+
   .logsin {
     display: block;
     display: flex;
     justify-content: center;
     margin: 2px;
   }
+
   .logsin button {
     display: flex;
     justify-content: center;
@@ -413,24 +440,30 @@ body {
     align-items: center;
     height: 24px;
   }
+
   .logsin button a {
     font-size: 13px;
   }
+
   .burger {
     display: block;
     margin-left: 65px;
     margin-top: 13px;
   }
+
   .header-active {
     background-color: #ffffffc0;
   }
+
   .header-active .navbar {
     display: block;
     margin-top: 5px;
   }
+
   .navbar {
     margin-bottom: 20px;
   }
+
   .navbar a {
     font-size: 14px;
     margin: 1px;

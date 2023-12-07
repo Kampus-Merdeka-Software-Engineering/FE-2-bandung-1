@@ -10,14 +10,16 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div class="header" id="header">
+    <div class="header header-active" id="header">
       <img src="img/logo/logo.png" alt="" />
       <div class="navbar" id="navbar">
         <p><a href="index.html">Home</a></p>
         <p><a href="#cntct">contact</a></p>
-        <!-- <div class="logsin">
-          <button><a href="login.html">Login</a></button>
-        </div> -->
+        <div class="logsin">
+          <a href="login.html">
+            <i class="fa-solid fa-user-secret icn"></i>
+          </a>
+        </div>
       </div>
       <div class="burger" id="burger">
         <i class="fa-solid fa-bars" style="color: black"></i>
@@ -77,46 +79,72 @@
     </div>
     <!-- AKHIR ATAS 2 ABOUT US -->
     <!-- AWAL TENGAH ABOUT US -->
-    <div class="team" id="teams">
-      <h1>Meet Our Teams</h1>
-      <p>Meet the people who help keep Phnes.Travels running</p>
+    <div>
+      <div class="container">
+        <div class="row text-center">
+          <h2>Meet Our Teams</h2>
+        </div>
+      </div>
     </div>
 
-    <div class="container-team">
-      <div>
-        <img src="img/team/salman.png" alt="" />
-        <h1>Muhammad Salman Al Farisy</h1>
-        <p>Leader Project</p>
-      </div>
-      <div>
-        <img src="img/team/saffa.png" alt="" />
-        <h1>Shaffa</h1>
-        <p>Front-end</p>
-      </div>
-      <div>
-        <img src="img/team/fiqri.png" alt="" />
-        <h1>Fiqri Wahyu</h1>
-        <p>Front-end</p>
-      </div>
-      <div>
-        <img src="img/team/sulton.png" alt="" />
-        <h1>Sulthon Nur Rohim</h1>
-        <p>Back-end</p>
-      </div>
-      <div>
-        <img src="img/team/nadhira.png" alt="" />
-        <h1>Nadhira Hasya</h1>
-        <p>Back-end</p>
-      </div>
-      <div>
-        <img src="img/team/reni.png" alt="" />
-        <h1>Reni Sabrina</h1>
-        <p>QA</p>
-      </div>
-      <div>
-        <img src="img/team/aulia.png" alt="" />
-        <h1>Aulia Yuslinu Saputri</h1>
-        <p>QA</p>
+    <div class="isi-content" id="tipe-karya">
+      <div class="kumpulankarya coding" id="coding">
+        <div class="judulKarya">
+          <div class="line left"></div>
+          <div class="line right"></div>
+        </div>
+
+        <div class="karyas" data-theme="color-light-2">
+          <div class="karya">
+            <div class="card">
+              <div class="thumb" data-thumbnail="img/team/salman.png"></div>
+              <div class="judulthumb">M. Salman Al Farisy</div>
+            </div>
+            <h3>leader Project</h3>
+          </div>
+          <div class="karya">
+            <div class="card">
+              <div class="thumb" data-thumbnail="img/team/saffa.png"></div>
+              <div class="judulthumb">Shaffa</div>
+            </div>
+            <h3>Front-end</h3>
+          </div>
+          <div class="karya">
+            <div class="card">
+              <div class="thumb" data-thumbnail="img/team/fiqri.png"></div>
+              <div class="judulthumb">Fiqri Wahyu</div>
+            </div>
+            <h3>Front-end</h3>
+          </div>
+          <div class="karya">
+            <div class="card">
+              <div class="thumb" data-thumbnail="img/team/sulton.png"></div>
+              <div class="judulthumb">Sulthon Nur Rohim</div>
+            </div>
+            <h3>Back-end</h3>
+          </div>
+          <div class="karya">
+            <div class="card">
+              <div class="thumb" data-thumbnail="img/team/nadhira.png"></div>
+              <div class="judulthumb">Nadhira Hasya</div>
+            </div>
+            <h3>Back-end</h3>
+          </div>
+          <div class="karya">
+            <div class="card">
+              <div class="thumb" data-thumbnail="img/team/reni.png"></div>
+              <div class="judulthumb">Reni Sabrina</div>
+            </div>
+            <h3>QA</h3>
+          </div>
+          <div class="karya">
+            <div class="card">
+              <div class="thumb" data-thumbnail="img/team/aulia.png"></div>
+              <div class="judulthumb">Aulia Yuslinu Saputri</div>
+            </div>
+            <h3>QA</h3>
+          </div>
+        </div>
       </div>
     </div>
     <!-- AKHIR TENGAH ABOUT US -->
@@ -204,9 +232,11 @@
     <!-- FOOTER -->
 
     <!-- pesan -->
+    <script src="js/teams.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/scrolhome.js"></script>
-    <script src="js/t.js"></script>
+    <!-- <script src="js/t.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0bc24d3478.js" crossorigin="anonymous"></script>
   </body>
