@@ -56,7 +56,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #d2e3c8;
+  color: black;
   text-decoration: none;
   transition: all 0.1s;
 }
@@ -68,7 +68,7 @@ body {
   height: 2px;
   width: 100%;
   left: 0;
-  background-color: #d2e3c8;
+  background-color: black;
   transition: 0, 3s;
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
@@ -101,7 +101,7 @@ body {
 }
 
 .logsin .icn:hover {
-  color: #d2e3c8;
+  transform: scale(1.1);
 }
 
 /* navbar */
@@ -337,6 +337,7 @@ ul#rekomkota {
   bottom: -30%;
   transition: 0.6s;
   z-index: 1;
+  background-color: #d2e3c8;
 }
 
 .isi_wisata:hover {
@@ -346,7 +347,7 @@ ul#rekomkota {
 
 .isi_wisata button a {
   text-decoration: none;
-  color: #9eb24a;
+  color: #86a789;
 }
 
 .isi_wisata:hover button {
@@ -502,7 +503,7 @@ ul#rekomkota {
     min-width: 145px;
     max-width: 145px;
     height: 165px;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   .container-wisata {
@@ -654,12 +655,22 @@ ul#rekomkota {
   }
 
   .header-img {
-    height: 497px;
+    height: 400px;
     justify-content: space-around;
   }
 
   .contai {
     height: 7vh;
+    margin-top: 10px;
+  }
+
+  .slides {
+    padding: 0 50px;
+    margin-top: 10px;
+  }
+
+  .carrousel img:first-child {
+    height: 110px;
   }
 
   nav ul p {
@@ -676,7 +687,7 @@ ul#rekomkota {
   .wrapper i {
     width: 25px;
     height: 25px;
-    line-height: 30px;
+    line-height: 28px;
   }
 
   .wrapper i:first-child {
@@ -703,7 +714,7 @@ ul#rekomkota {
 
   .container-wisata {
     margin: 10px 20px;
-    gap: 10px;
+    gap: 15px 0;
   }
 
   .container-back-wisata h1 {
@@ -716,7 +727,7 @@ ul#rekomkota {
   }
 
   .container-kota {
-    margin-top: 140px;
+    margin-top: 100px;
   }
 
   .container-kota h1 {
@@ -732,9 +743,17 @@ ul#rekomkota {
   }
 
   .slide p {
-    font-size: 8px;
+    font-size: 9px;
     margin: 0;
     padding: 0 50px;
+  }
+
+  .details .name {
+    font-size: 11px;
+  }
+
+  .details .job {
+    font-size: 10px;
   }
 
   .slide .quote-icon {
@@ -760,13 +779,14 @@ ul#rekomkota {
   }
 
   .isi_wisata h2 {
-    font-size: 7px;
+    font-size: 10px;
     margin: 0px 0px 20px 0px;
   }
 
   .isi_wisata h1 {
-    font-size: 9px;
-    font-weight: 100;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
   }
 
   .isi_wisata button {

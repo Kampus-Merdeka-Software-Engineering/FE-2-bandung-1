@@ -39,7 +39,7 @@ function itemwista(id, jdl, price) {
     </div>
     <h2>Rp.${price}</h2>
     <button>
-        <a href="pay.html?id=${id}">Go Flight</a>
+        <a href="pay.html?id=${id}">GO FLIGHT</a>
     </button>`;
 }
 function cetakitemisata() {

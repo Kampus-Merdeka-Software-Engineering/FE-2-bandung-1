@@ -325,12 +325,17 @@ body {
     font-weight: 600;
   }
 
+  .img img{
+    width: 100px;
+  }
+
   img {
     width: 70px;
   }
 
   p {
     font-size: 10px;
+    margin-top: 20px;
   }
 
   .ipt label {
