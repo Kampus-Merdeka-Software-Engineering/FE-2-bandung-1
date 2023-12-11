@@ -21,7 +21,6 @@ getapi(function (error, data) {
   if (error) {
     console.error('Terjadi kesalahan:', error);
   } else {
-    console.log('berhasil');
     var data = getdata(parseInt(id));
     data = data[0];
     const destination = document.getElementById('ipt-destination');

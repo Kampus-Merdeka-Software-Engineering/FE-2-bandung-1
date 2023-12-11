@@ -16,6 +16,7 @@ formContact.addEventListener('submit', async function (event) {
       },
       body: JSON.stringify(body),
     });
+    console.log(body)
 
     const products = await response.json();
     alert(products.message);
