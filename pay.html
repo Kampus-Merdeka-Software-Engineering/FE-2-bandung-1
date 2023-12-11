@@ -8,63 +8,59 @@
   </head>
   <body>
     <div class="checkout"">
-      <div class="container">
-        <h1>Book Now For Travel </h1>
-        <div class="form">
-          <div class="ipt">
-            <h1>Name</h1>
-            <input type="text" placeholder="Enter your name and surname"/>
+      <form id="form-pay" class="container">
+          <h1>Book Now For Travel </h1>
+          <div class="form">
+            <div class="ipt">
+              <h1>Name</h1>
+              <input type="text" name="name" placeholder="Enter your name and surname"/>
+            </div>
+            <div class="ipt">
+              <h1>Email Address</h1>
+              <input type="text" name="email" placeholder="Enter your email address"/>
+            </div>
           </div>
-          <div class="ipt">
-            <h1>Email Address</h1>
-            <input type="text" placeholder="Enter your email address"/>
+          <div class="form">
+            <div class="ipt">
+              <h1>Telephone Number</h1>
+              <input type="text" name="telp_number" placeholder="Enter your telephone number"/>
+            </div>
+            <div class="ipt">
+              <h1>Destinations</h1>
+              <input type="text" name="destinations" placeholder="Select the service types" id="ipt-destination" readonly/>
+            </div>
           </div>
-        </div>
-        <div class="form">
-          <div class="ipt">
-            <h1>Telephone Number</h1>
-            <input type="text" placeholder="Enter your telephone number"/>
+          <div class="form">
+            <div class="ipt">
+              <h1>Address</h1>
+              <input type="text" name="address" placeholder="Enter the address"/>
+            </div>
+            <div class="ipt">
+              <h1>Quantity</h1>
+              <input type="number" name="quantity" placeholder="Select the quantity"/>
+            </div>
           </div>
-          <div class="ipt">
-            <h1>Destinations</h1>
-            <input type="text" placeholder="Select the service types"/>
+          <div class="form">
+            <div class="ipt"> 
+              <h1>Price</h1>
+              <input name="Price" type="text" id="ipt-price" readonly/>
+            </div>
+            <div class="ipt">
+              <h1>Choose Payment Method</h1>
+              <select name="payment_method">
+                <option value="" selected disabled>Select the payment</option>
+                <option value="BRI">BRI</option>
+                <option value="BNI">BNI</option>
+                <option value="BCA">BCA</option>
+              </select>
+            </div>
+            
           </div>
-        </div>
-        <div class="form">
-          <div class="ipt">
-            <h1>Address</h1>
-            <input type="text" placeholder="Enter the address"/>
+          
+          <div class="smbt">
+            <button>Book Now</button>
           </div>
-          <div class="ipt">
-            <h1>Quantity</h1>
-            <input type="number" placeholder="Select the quantity"/>
-          </div>
-        </div>
-        <div class="form">
-          <div class="ipt">
-            <h1>Price</h1>
-            <input type="text"/>
-          </div>
-          <div class="ipt">
-            <h1>Choose Payment Method</h1>
-            <input type="text" placeholder="Select the payment"/>
-          </div>
-        </div>
-        <div class="form">
-          <div class="ipt">
-            <h1>Jam Penjemputan</h1>
-            <input type="text"/>
-          </div>
-          <div class="ipt">
-            <h1>Hari/Tanggal</h1>
-            <input type="text" placeholder="Choose date"/>
-          </div>
-        </div>
-        
-        <div class="smbt">
-          <button onclick="pop.popup()">Book Now</button>
-        </div>
-      </div>
+      </form>
       <div class="imge">
         <img src="img/pembelian/mobil.png" alt="">
       </div>
@@ -86,6 +82,7 @@
         </div>
       </div>
     </div>
+    <script src="js/exapiwisata.js"></script>
     <script src="js/pay.js"></script>
   </body>
 </html>

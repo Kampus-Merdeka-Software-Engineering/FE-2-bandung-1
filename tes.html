@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/about-us.css" />
     <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&family=Karla:wght@700&family=Lobster&family=Montserrat+Alternates:wght@800&family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
   </head>
@@ -14,7 +14,12 @@
       <img src="img/logo/logo.png" alt="" />
       <div class="navbar" id="navbar">
         <p><a href="index.html">Home</a></p>
-        <p><a href="#cntct">Contact</a></p>
+        <p><a href="#cntct">contact</a></p>
+        <div class="logsin">
+          <a href="login.html">
+            <i class="fa-solid fa-user-secret icn"></i>
+          </a>
+        </div>
       </div>
       <div class="burger" id="burger">
         <i class="fa-solid fa-bars" style="color: black"></i>
@@ -76,7 +81,7 @@
     <!-- AWAL TENGAH ABOUT US -->
     <div>
       <div class="container">
-        <div class="row">
+        <div class="row text-center">
           <h2>Meet Our Teams</h2>
         </div>
       </div>
@@ -94,50 +99,50 @@
             <div class="card">
               <div class="thumb" data-thumbnail="img/team/salman.png"></div>
               <div class="judulthumb">M. Salman Al Farisy</div>
-              <h3>leader Project</h3>
             </div>
+            <h3>leader Project</h3>
           </div>
           <div class="karya">
             <div class="card">
               <div class="thumb" data-thumbnail="img/team/saffa.png"></div>
               <div class="judulthumb">Shaffa</div>
-              <h3>Front-end</h3>
             </div>
+            <h3>Front-end</h3>
           </div>
           <div class="karya">
             <div class="card">
               <div class="thumb" data-thumbnail="img/team/fiqri.png"></div>
               <div class="judulthumb">Fiqri Wahyu</div>
-              <h3>Front-end</h3>
             </div>
+            <h3>Front-end</h3>
           </div>
           <div class="karya">
             <div class="card">
               <div class="thumb" data-thumbnail="img/team/sulton.png"></div>
               <div class="judulthumb">Sulthon Nur Rohim</div>
-              <h3>Back-end</h3>
             </div>
+            <h3>Back-end</h3>
           </div>
           <div class="karya">
             <div class="card">
               <div class="thumb" data-thumbnail="img/team/nadhira.png"></div>
               <div class="judulthumb">Nadhira Hasya</div>
-              <h3>Back-end</h3>
             </div>
+            <h3>Back-end</h3>
           </div>
           <div class="karya">
             <div class="card">
               <div class="thumb" data-thumbnail="img/team/reni.png"></div>
               <div class="judulthumb">Reni Sabrina</div>
-              <h3>QA</h3>
             </div>
+            <h3>QA</h3>
           </div>
           <div class="karya">
             <div class="card">
               <div class="thumb" data-thumbnail="img/team/aulia.png"></div>
               <div class="judulthumb">Aulia Yuslinu Saputri</div>
-              <h3>QA</h3>
             </div>
+            <h3>QA</h3>
           </div>
         </div>
       </div>
@@ -151,14 +156,22 @@
         </div>
         <div class="container-list-contact">
           <form action=""></form>
-          <form class="sbmt-contact" id="form-contact">
+          <div class="sbmt-contact">
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Terima kasih!!!</strong> Pesan anda sudah kami terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <h1>Get In Touch</h1>
             <p>We are here for you! How can we help?</p>
-            <textarea name="name" id="" cols="" rows="1" placeholder="Enter your name"></textarea>
+            <textarea name="nama" id="" cols="" rows="1" placeholder="Enter your name"></textarea>
             <textarea name="email" id="" cols="" rows="1" placeholder="Enter your email"></textarea>
-            <textarea name="message " id="" cols="" rows="8-" placeholder="Go ahead, we are listening.."></textarea>
+            <textarea name="pesan" id="" cols="" rows="8-" placeholder="Go ahead, we are listening.."></textarea>
             <button class="btn-kirim" type="submit">Submit</button>
-          </form>
+            <button class="btn btn-primary d-none btn-loading" type="button" disabled style="background-color: #9eb24a">
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              <span role="status">Loading...</span>
+            </button>
+          </div>
           <div class="informasi-contact">
             <img src="img/contact/keren.png" alt="" />
             <div class="detail-contact">

@@ -67,6 +67,16 @@ body {
   padding-left: 10px;
 }
 
+.ipt select{
+  width: 104%;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    font-size: 10px;
+    background-color: #d9d9d9;
+    padding-left: 10px;
+}
+
 .smbt {
   width: 100%;
   display: flex;
@@ -200,6 +210,11 @@ body {
     height: 20px;
     font-size: 8px;
   }
+  .ipt select {
+    border-radius: 6px;
+    height: 20px;
+    font-size: 8px;
+  }
   
   .smbt button {
     border-radius: 7px;
@@ -274,6 +289,11 @@ body {
   }
   
   .ipt input {
+    border-radius: 3px;
+    height: 15px;
+    font-size: 6px;
+  }
+  .ipt select {
     border-radius: 3px;
     height: 15px;
     font-size: 6px;

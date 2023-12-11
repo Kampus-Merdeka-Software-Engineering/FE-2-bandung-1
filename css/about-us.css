@@ -25,7 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 101px;
+  height: 85px;
   width: -webkit-fill-available;
   position: fixed;
   background-color: #ffffff4a;
@@ -42,9 +42,11 @@ body {
 
 .navbar {
   display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 50px;
     align-items: center;
-    width: 335px;
+    width: 100%;
+    margin-right: 25px;
 }
 
 .navbar a {
@@ -57,7 +59,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #D2E3C8;
+  color: black;
   text-decoration: none;
   transition: all 0.1s;
 }
@@ -69,7 +71,7 @@ body {
   height: 2px;
   width: 100%;
   left: 0;
-  background-color: #D2E3C8;
+  background-color: black;
   transition: 0, 3s;
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
@@ -94,15 +96,6 @@ body {
 
 .scrolled2 {
   background-color: #ffffff;
-}
-
-.logsin .icn {
-  font-size: 35px;
-  color: black;
-}
-
-.logsin .icn:hover {
-  color: #d2e3c8;
 }
 
 /* navbar */
@@ -132,24 +125,27 @@ body {
   margin: 15px;
 }
 
-.head-desk h2{
+.head-desk h2 {
   font-family: Karla;
   font-size: 18px;
   font-weight: 400;
+  margin: 2px 0;
 }
 
-.head-desk h1{
+.head-desk h1 {
   font-family: Montserrat Alternates;
   font-size: 32px;
   color: #656029;
   font-weight: 700;
   letter-spacing: 0.16px;
+  margin: 2px 0;
 }
 
 .head-desk p{
   font-family: Karla;
   font-size: 16px;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 /*  */
@@ -193,6 +189,10 @@ color: #37454D;
 }
 
 /*  */
+
+.row h2{
+  text-align: center
+}
 
 .isi-content {
   padding: 30px 100px;
@@ -306,7 +306,7 @@ color: #37454D;
 
 .karyas {
   background-color: #f5f5f5;
-  padding: 10px;
+  padding: 20px 10px 0;
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
@@ -320,12 +320,12 @@ color: #37454D;
   max-width: 250px;
   padding: 3px;
   border-radius: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
-.karya h3{
-  margin-top: -32px;
-  font-size: 20px;
+.karya h3 {
+  margin: 0;
+  font-size: 1em;
   width: 100%;
   text-align: center;
 }
@@ -366,7 +366,7 @@ color: #37454D;
 .karya .card {
   background-color: white;
   border-radius: 25px;
-  padding: 15px;
+  padding: 10px;
   height: 100%;
   box-sizing: border-box;
   transition: 0.3s ease-in-out;
@@ -376,16 +376,16 @@ color: #37454D;
   width: 100%;
   background-size: cover;
   border-radius: 25px;
-  height: 250px;
+  height: 265px;
   transition: 0.3s;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   background-position: center;
 }
 
 .karya .card .judulthumb {
-  padding: 15px 0;
+  padding: 15px 0 5px 0;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -511,7 +511,7 @@ line-height: 150%;
 display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .footer {
@@ -562,10 +562,6 @@ line-height: normal;
     font-size: 28px;
   }
 
-  .logsin .icn {
-    font-size: 27px;
-  }
-
   .head-desk h2{
     font-size: 17px;
   }
@@ -599,10 +595,6 @@ line-height: normal;
     font-size: 17px;
   }
 
-  .logsin .icn {
-    font-size: 27px;
-  }
-  
   .head-desk h2{
     font-size: 13px;
   }
@@ -647,17 +639,21 @@ line-height: normal;
   }
   
   .isi-content {
-    padding: 50px 50px;
+    padding: 20px 50px 50px;
     display: flex;
     justify-content: center;
-  }
+}
   
-  .karya {
-    min-width: 170px;
-    max-width: 170px;
-    height: 240px;
-    margin-bottom: 20px;
-  }
+.karya {
+  min-width: 170px;
+  max-width: 170px;
+  height: 240px;
+  margin-bottom: 20px;
+}
+
+.karya:hover .card {
+  transform: translateY(-20px);
+}
 
   .karyas a {
     font-size: 12px;
@@ -669,21 +665,21 @@ line-height: normal;
   }
   
   .karya .card .thumb {
-    border-radius: 15px;
-  }
+    border-radius: 20px;
+    height: 190px;
+}
   
-  .karya .card .judulthumb{
-    font-size: 0.8em;
-    padding: 10px 0;
-  }
+.karya .card .judulthumb {
+  font-size: 0.9em;
+  padding: 3px 0;
+}
   
   .karya h3{
-    font-size: 0.8em;
-    margin-top: -25px;
+    font-size: 0.7em;
   }
   
   .karya .card {
-    padding: 7px;
+    padding: 6px;
   }
 
 .logo-pesan img{
@@ -758,19 +754,13 @@ textarea{
     font-size: 15px;
   }
 
-  .logsin {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-  }
-
-  .logsin .icn {
-    font-size: 27px;
-  }
-
   .burger {
     display: block;
     margin-left: 65px;
+  }
+
+  .header {
+    height: 65px;
   }
 
   .header-active {
@@ -779,9 +769,9 @@ textarea{
 
   .header-active .navbar {
     display: block;
-    margin-top: 0;
+    margin: 9px 0;
     padding: 0;
-  }
+}
 
   .navbar {
     margin-bottom: 0;
@@ -836,7 +826,7 @@ textarea{
   }
 
   .head-desk p{
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .container-why-us {
@@ -867,10 +857,10 @@ textarea{
   }
   
   .isi-content {
-    padding: 40px 20px;
+    padding: 0px 20px 30px;
     display: flex;
     justify-content: center;
-  }
+}
   
   .karya {
     min-width: 90px;
@@ -878,12 +868,11 @@ textarea{
     height: 130px;
     border-radius: 20px;
     padding: 2px;
-    margin-bottom: 15px;
-  }
+    margin-bottom: 10px;
+}
 
   .karya h3{
-    font-size: 0.5em;
-    margin-top: -20px;
+    font-size: 0.4em;
   }
 
   .karyas a {
@@ -897,22 +886,23 @@ textarea{
   }
 
   .karya:hover .card {
-    transform: translateY(-25px);
+    transform: translateY(-12px);
   }
   
   .karya .card .thumb {
-    border-radius: 15px;
-  }
+    border-radius: 18px;
+    height: 100px;
+}
   
   .karya .card {
     padding: 2px;
     border-radius: 20px;
-  }
+}
 
-  .karya .card .judulthumb{
-    font-size: 0.5em;
-    padding: 6px 0;
-  }
+.karya .card .judulthumb {
+  font-size: 0.5em;
+  padding: 3px 0px;
+}
 
   .logo-pesan img{
     width: 120px;
@@ -934,6 +924,7 @@ textarea{
 
   .dtl-contact p{
     font-size: 9px;
+    margin: 0;
   }
 
   .informasi-contact{

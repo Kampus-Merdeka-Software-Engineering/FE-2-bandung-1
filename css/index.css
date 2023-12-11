@@ -12,11 +12,11 @@ body {
 /* navbar */
 .header-img {
   width: 100%;
-  height: 820px;
-  background-image: url('../img/jawatengah/jawa-tengah.png');
+  height: 100vh;
+  background-image: url(../img/jawatengah/jawa-tengah.png);
   background-repeat: round;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
@@ -41,9 +41,11 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 600px;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    margin-right: 25px;
 }
 
 .navbar a {
@@ -95,25 +97,15 @@ body {
   background-color: #ffffff;
 }
 
-.logsin .icn {
-  font-size: 35px;
-  color: black;
-}
-
-.logsin .icn:hover {
-  transform: scale(1.1);
-}
-
 /* navbar */
 
 .slides {
   display: flex;
-  padding: 0 35px;
   justify-content: center;
-  width: -webkit-fill-available;
+  width: 850px;
   align-items: center;
-  min-height: 10vh;
   margin-top: 50px;
+
 }
 
 .wrapper {
@@ -257,6 +249,13 @@ nav ul p:hover::after {
   opacity: 1;
 }
 
+.aktif{
+  background: #b2c8ba;
+  height: 100%;
+  border-radius: 30px;
+  Color: #fff;
+}
+
 .container-back-wisata {
   background-color: #9db24a0d;
   padding: 10px 0px 40px 0px;
@@ -276,7 +275,7 @@ nav ul p:hover::after {
 
 .container-wisata {
   display: flex;
-  margin: 10px 50px;
+  margin: 50px;
   flex-wrap: wrap;
   gap: 30px 25px;
   justify-content: space-evenly;
@@ -356,6 +355,10 @@ ul#rekomkota {
   bottom: 0;
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
 /* akhir homepage */
 
 /* awal testi*/
@@ -373,7 +376,7 @@ ul#rekomkota {
   justify-content: center;
   align-items: center;
   background-color: #bdbdbd5c;
-  margin: 80px 0px 80px 0px;
+  margin: 35px 0;
 }
 
 .testimonial {
@@ -475,7 +478,7 @@ ul#rekomkota {
 
 @media screen and (min-width: 551px) and (max-width: 900px) {
   .navbar {
-    width: 300px;
+    width: 370px;
   }
 
   .navbar a {
@@ -487,16 +490,12 @@ ul#rekomkota {
   }
 
   .carrousel img {
-    height: 170px;
+    height: 140px;
   }
 
   .header-img {
     height: 577px;
     justify-content: space-around;
-  }
-
-  .logsin .icn {
-    font-size: 27px;
   }
 
   .isi_wisata {
@@ -549,6 +548,10 @@ ul#rekomkota {
     width: 55%;
     border-radius: 8px;
     margin-bottom: 5px;
+  }
+
+  .slides{
+    width: 485px;
   }
 
   .isi-footer img {
@@ -612,17 +615,6 @@ ul#rekomkota {
     font-size: 15px;
   }
 
-  .logsin {
-    display: flex;
-    justify-content: center;
-    margin-right: 0;
-    padding-bottom: 20px;
-  }
-
-  .logsin .icn {
-    font-size: 27px;
-  }
-
   .burger {
     display: block;
     margin-left: 65px;
@@ -665,8 +657,8 @@ ul#rekomkota {
   }
 
   .slides {
-    padding: 0 50px;
     margin-top: 10px;
+    width: 280px;
   }
 
   .carrousel img:first-child {
@@ -714,8 +706,8 @@ ul#rekomkota {
 
   .container-wisata {
     margin: 10px 20px;
-    gap: 15px 0;
-  }
+    gap: 15px 10px;
+}
 
   .container-back-wisata h1 {
     font-size: 25px;

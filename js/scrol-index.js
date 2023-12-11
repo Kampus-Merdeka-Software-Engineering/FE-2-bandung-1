@@ -1,7 +1,7 @@
 let nav = document.getElementById('navbar');
 nav.children[1].addEventListener('click', function (event) {
   event.preventDefault(); // Mencegah perilaku default tautan
-  const targetElement = document.getElementById('tour');
+  const targetElement = document.getElementById('destination');
   const offset = 128; // Jarak dari atas yang diinginkan
   const targetPosition = targetElement.offsetTop - offset;
   window.scrollTo({
