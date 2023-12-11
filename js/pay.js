@@ -58,7 +58,6 @@ formPay.addEventListener('submit', async function (event) {
     pop.popup();
 
     const products = await response.json();
-    alert(products.message);
   } catch (error) {
     console.error('error :', error);
   }
