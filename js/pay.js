@@ -44,6 +44,8 @@ formPay.addEventListener('submit', async function (event) {
   body.Price = parseInt(body.Price);
   body.quantity = parseInt(body.quantity);
 
+  console.log(body)
+
   try {
     const response = await fetch(`${API_URL}/user`, {
       method: 'POST',
